@@ -27,6 +27,10 @@ INSTALLED_APPS = [
     'home',
     'search',
 
+        'wagtail.contrib.modeladmin',
+    'wagtail.contrib.settings',  # Only required when WAGTAILTRANS_LANGUAGES_PER_SITE=True
+    'wagtailtrans',
+
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',
@@ -122,6 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+
 
 TIME_ZONE = 'UTC'
 
